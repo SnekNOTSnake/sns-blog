@@ -1,0 +1,31 @@
+.footer {
+	margin-top: 128px;
+	text-align: center;
+}
+
+.icon {
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	margin: 0 8px;
+}
+
+.iconSmall {
+	position: relative;
+	top: 4px;
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+	margin: 0 6px;
+}
+
+.divider {
+	width: 400px;
+	height: 1px;
+	border-top: 1px dashed rgba(255, 255, 255, 0.2);
+	margin: 12px auto 24px;
+}
+
+.report {
+	margin-bottom: 8px;
+}

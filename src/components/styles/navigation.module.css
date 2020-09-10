@@ -1,0 +1,66 @@
+:root {
+	--main-color: #428ece;
+	--nav-width: 64px;
+}
+
+.root {
+	width: var(--nav-width);
+	background-color: #313845;
+	color: rgba(255, 255, 255, 0.87);
+}
+
+.navigationBody {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.menu {
+	margin-top: 16px;
+}
+
+.link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: var(--nav-width);
+	height: var(--nav-width);
+	text-decoration: none;
+	background-image: none;
+	text-shadow: none;
+	color: rgba(255, 255, 255, 0.87);
+	font-weight: bold;
+}
+
+.link:hover {
+	color: var(--main-color);
+}
+
+.menuIcon {
+	font-size: 1.3em;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: var(--nav-width);
+	height: var(--nav-width);
+	background-color: var(--main-color);
+	color: rgba(255, 255, 255, 0.87);
+	font-size: 2em;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 2px 7px rgba(0, 0, 0, 0.5);
+	padding: 8px;
+}
+
+.logo:hover {
+	color: rgba(255, 255, 255, 0.87);
+}
+
+.logo img {
+	margin: 0;
+}

@@ -1,0 +1,30 @@
+* {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+a {
+	color: rgba(255, 255, 255, 0.87);
+	text-shadow: none;
+	background-image: none;
+}
+
+a {
+	color: orange;
+}
+
+.root {
+	display: flex;
+	flex-wrap: nowrap;
+	background-color: #141820;
+	color: rgba(255, 255, 255, 0.87);
+	min-height: 100vh;
+}
+
+.content {
+	width: calc(95% - 64px);
+	margin: 64px auto;
+	max-width: 1200px;
+}
