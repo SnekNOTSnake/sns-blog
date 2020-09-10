@@ -3,6 +3,7 @@ import { graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
 import styles from './styles/index.module.css'
 import Layout from '../components/Layout'
+import Tag from '../components/Tag'
 import SEO from '../components/SEO'
 
 const Home = ({ data }) => {
@@ -27,9 +28,7 @@ const Home = ({ data }) => {
 							<p style={{ marginBottom: 16 }}>{node.description.description}</p>
 							<div className={styles.tags}>
 								{node.tags.map((val) => (
-									<div key={val} className={styles.tag}>
-										#{val}
-									</div>
+									<Tag key={val} name={val} />
 								))}
 							</div>
 						</div>

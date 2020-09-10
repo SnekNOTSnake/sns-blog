@@ -10,9 +10,9 @@ contentfulConfig = {
 
 module.exports = {
 	siteMetadata: {
-		title: 'Gatsby Netlify Contentful',
+		title: 'SNS Blog',
 		description:
-			'A Gatsby starter designed to be deployed on Netlify using contents on Contentful',
+			'A place for me to share whatever I want to share with the world.',
 		author: 'SnekNOTSnake',
 	},
 	plugins: [

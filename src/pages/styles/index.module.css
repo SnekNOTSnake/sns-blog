@@ -51,15 +51,6 @@
 	font-size: 0.8em;
 }
 
-.tag {
-	padding: 4px 8px;
-	display: inline-block;
-	background-color: rgba(255, 255, 255, 0.5);
-	color: #313845;
-	border-radius: 4px;
-	margin-right: 8px;
-}
-
 @media only screen and (min-width: 768px) {
 	.post {
 		width: calc(50% - 16px);

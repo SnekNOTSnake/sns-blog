@@ -21,6 +21,7 @@
 		"@fortawesome/fontawesome-svg-core": "^1.2.30",
 		"@fortawesome/free-solid-svg-icons": "^5.14.0",
 		"@fortawesome/react-fontawesome": "^0.1.11",
+		"chroma-js": "^2.1.0",
 		"clsx": "^1.1.1",
 		"dotenv": "^8.2.0",
 		"gatsby": "^2.24.54",

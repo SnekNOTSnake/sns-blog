@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import Tag from '../components/Tag'
 import SEO from '../components/SEO'
 
 const Tags = ({ data }) => {
@@ -9,13 +10,15 @@ const Tags = ({ data }) => {
 		<Layout>
 			<SEO title="Home" />
 			<h1>All Tags</h1>
-			{tags.map((tag) => (
-				<ul key={tag.fieldValue}>
-					<li>
-						#{tag.fieldValue} ({tag.totalCount})
-					</li>
-				</ul>
-			))}
+			<div className="Tags">
+				{tags.map((tag) => (
+					<Tag
+						key={tag.fieldValue}
+						name={tag.fieldValue}
+						text={`#${tag.fieldValue} ( ${tag.totalCount} )`}
+					/>
+				))}
+			</div>
 		</Layout>
 	)
 }

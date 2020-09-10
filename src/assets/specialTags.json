@@ -1,0 +1,86 @@
+[
+	{
+		"name": "javascript",
+		"color": "#f0db4f"
+	},
+	{
+		"name": "css",
+		"color": "#2965f1"
+	},
+	{
+		"name": "html",
+		"color": "#f06529"
+	},
+	{
+		"name": "react.js",
+		"color": "#61DBFB"
+	},
+	{
+		"name": "vue.js",
+		"color": "#42b883"
+	},
+	{
+		"name": "shell",
+		"color": "#000"
+	},
+	{
+		"name": "node.js",
+		"color": "#68A063"
+	},
+	{
+		"name": "typescript",
+		"color": "#007acc"
+	},
+	{
+		"name": "database",
+		"color": "#000"
+	},
+	{
+		"name": "nosql",
+		"color": "#000"
+	},
+	{
+		"name": "mocha",
+		"color": "#8D6748"
+	},
+	{
+		"name": "jest",
+		"color": "#99425b"
+	},
+	{
+		"name": "graphql",
+		"color": "#e535ab"
+	},
+	{
+		"name": "sql",
+		"color": "#000"
+	},
+	{
+		"name": "git",
+		"color": "#F1502F"
+	},
+	{
+		"name": "docker",
+		"color": "0db7ed"
+	},
+	{
+		"name": "linux",
+		"color": "#333333"
+	},
+	{
+		"name": "socket_io",
+		"color": "#ffffff"
+	},
+	{
+		"name": "web_platform",
+		"color": "#428ECE"
+	},
+	{
+		"name": "next.js",
+		"color": "#000000"
+	},
+	{
+		"name": "gatsby.js",
+		"color": "#663399"
+	}
+]

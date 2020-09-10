@@ -11,6 +11,10 @@ a {
 	background-image: none;
 }
 
+h1 {
+	margin-bottom: 36px;
+}
+
 a {
 	color: orange;
 }

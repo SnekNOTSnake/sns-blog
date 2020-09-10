@@ -1,0 +1,8 @@
+.tag {
+	padding: 4px 8px;
+	display: inline-block;
+	background-color: rgba(255, 255, 255, 0.75);
+	color: #313845;
+	border-radius: 4px;
+	margin-right: 8px;
+}
