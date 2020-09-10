@@ -71,3 +71,6 @@ yarn-error.log
 
 # Netlify
 .netlify
+
+# Utils
+improving-notes.md
