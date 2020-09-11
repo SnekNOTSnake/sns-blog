@@ -22,9 +22,9 @@ const Layout = () => {
 					<Link className={styles.link} to="/">
 						<FontAwesomeIcon className={styles.menuIcon} icon={faHome} />
 					</Link>
-					<div className={styles.link}>
+					<Link className={styles.link} to="/search">
 						<FontAwesomeIcon className={styles.menuIcon} icon={faSearch} />
-					</div>
+					</Link>
 					<Link className={styles.link} to="/tags">
 						<FontAwesomeIcon className={styles.menuIcon} icon={faTags} />
 					</Link>

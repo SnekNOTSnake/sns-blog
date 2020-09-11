@@ -1,3 +1,8 @@
+html {
+	/* Remove scrollbar made by TypographyJS */
+	overflow-y: auto;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -19,6 +24,30 @@ a {
 	color: orange;
 }
 
+input {
+	color: #fff;
+	background-color: #313845;
+	border: none;
+	padding: 8px 16px;
+	width: 320px;
+	border-radius: 4px;
+	margin-right: 8px;
+	outline: none;
+}
+
+button {
+	padding: 8px 16px;
+	color: #fff;
+	background-color: hsl(207, 59%, 53%);
+	border: none;
+	outline: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+button:active {
+	background-color: hsl(207, 59%, 40%);
+}
+
 .root {
 	display: flex;
 	flex-wrap: nowrap;
@@ -31,4 +60,10 @@ a {
 	width: calc(95% - 64px);
 	margin: 64px auto;
 	max-width: 1200px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.main {
+	width: 100%z;
 }

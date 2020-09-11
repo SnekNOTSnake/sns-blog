@@ -1,8 +1,17 @@
 .tag {
+	position: relative;
+	bottom: 0;
 	padding: 4px 8px;
 	display: inline-block;
 	background-color: rgba(255, 255, 255, 0.75);
 	color: #313845;
 	border-radius: 4px;
 	margin-right: 8px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.75);
+	transition: box-shadow 0.2s linear, bottom 0.2s linear;
+}
+
+.tag:hover {
+	bottom: 4px;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.75);
 }

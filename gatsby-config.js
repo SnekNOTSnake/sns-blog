@@ -30,6 +30,24 @@ module.exports = {
 			},
 		},
 		{
+			resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
+			options: {
+				// Fields to index
+				fields: [`title`, `tags`, `body`, `description`, `slug`],
+				// How to resolve each field`s value for a supported node type
+				resolvers: {
+					// For any node of type MarkdownRemark, list how to resolve the fields` values
+					ContentfulBlogPost: {
+						title: (node) => node.title,
+						tags: (node) => node.tags,
+						body: (node) => node.fields.body.body,
+						description: (node) => node.fields.description.description,
+						slug: (node) => node.slug,
+					},
+				},
+			},
+		},
+		{
 			resolve: 'gatsby-plugin-manifest',
 			options: {
 				name: 'GatsbyNetlifyContentfulStarter',

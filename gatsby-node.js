@@ -25,6 +25,19 @@ const createPages = async ({ graphql, actions }) => {
 	})
 }
 
+// Create body and description field on node ContentfulBlogPost,
+// because it doesn't have one and only have the ID reference.
+const onCreateNode = ({ node, getNode, actions }) => {
+	const { createNodeField } = actions
+	if (node.internal.type === 'ContentfulBlogPost') {
+		const body = getNode(node.body___NODE)
+		const description = getNode(node.description___NODE)
+		createNodeField({ node, name: 'body', value: body })
+		createNodeField({ node, name: 'description', value: description })
+	}
+}
+
 module.exports = {
 	createPages,
+	onCreateNode,
 }
