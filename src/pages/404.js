@@ -6,7 +6,8 @@ const NotFound = () => {
 	return (
 		<Layout>
 			<SEO title="Page Not Found" />
-			<h2>NotFound</h2>
+			<h1>NotFound</h1>
+			<p>The page you're looking for is not available.</p>
 		</Layout>
 	)
 }

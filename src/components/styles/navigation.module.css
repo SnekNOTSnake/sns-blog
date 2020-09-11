@@ -1,23 +1,27 @@
 :root {
-	--main-color: #428ece;
+	--main-color: #3b82bd;
 	--nav-width: 64px;
 }
 
 .root {
-	width: var(--nav-width);
+	position: fixed;
+	width: 100%;
+	height: 64px;
 	background-color: #313845;
 	color: rgba(255, 255, 255, 0.87);
 	box-shadow: 0 0 6px rgba(0, 0, 0, 0.75);
+	z-index: 1;
 }
 
 .navigationBody {
-	position: fixed;
-	top: 0;
-	left: 0;
+	width: calc(100%);
+	display: flex;
 }
 
 .menu {
-	margin-top: 16px;
+	display: flex;
+	width: calc(100% - calc(var(--nav-width) + 16px));
+	justify-content: flex-end;
 }
 
 .link {
@@ -31,18 +35,14 @@
 	text-shadow: none;
 	color: rgba(255, 255, 255, 0.87);
 	font-weight: bold;
+	transition: color 0.2s ease-out, background-color 0.2s ease-out;
 }
-
 .link:hover {
 	color: var(--main-color);
 }
 
-.menuIcon {
-	font-size: 1.3em;
-}
-
 .logo {
-	display: flex;
+	display: inline-flex;
 	align-items: center;
 	justify-content: center;
 	width: calc(var(--nav-width) + 16px);
@@ -52,7 +52,6 @@
 	color: rgba(255, 255, 255, 0.87);
 	font-size: 2em;
 	font-weight: bold;
-	display: flex;
 	align-items: center;
 	justify-content: center;
 	box-shadow: 0 2px 7px rgba(0, 0, 0, 0.5);
@@ -65,4 +64,42 @@
 
 .logo img {
 	margin: 0;
+	transition: transform 0.4s 0s ease-out;
+	transform: rotate(0deg);
+}
+
+.logo:hover img {
+	transform: rotate(-360deg);
+	transition: transform 0.4s 0.1s ease-out;
+}
+
+@media only screen and (min-width: 768px) {
+	.root {
+		position: relative;
+		height: initial;
+		width: var(--nav-width);
+	}
+
+	.navigationBody {
+		position: fixed;
+		width: var(--nav-width);
+		top: 0;
+		left: 0;
+		flex-wrap: wrap;
+		display: block;
+	}
+
+	.logo {
+		display: flex;
+	}
+
+	.menu {
+		margin-top: 16px;
+		display: block;
+		width: var(--nav-width);
+	}
+
+	.menuIcon {
+		font-size: 1.3em;
+	}
 }

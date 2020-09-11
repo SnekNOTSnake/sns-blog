@@ -1,0 +1,18 @@
+.pagination {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 80px;
+	font-size: 0.85em;
+}
+
+.linkPagination {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 32px;
+	height: 32px;
+	color: #fff;
+	margin: 0 8px;
+	border-radius: 100px;
+}

@@ -19,16 +19,32 @@ const Layout = () => {
 					<img src={logo} alt="logo" />
 				</Link>
 				<div className={styles.menu}>
-					<Link className={styles.link} to="/">
+					<Link
+						activeStyle={{ backgroundColor: 'rgba(0, 0, 0, 0.25)' }}
+						className={styles.link}
+						to="/"
+					>
 						<FontAwesomeIcon className={styles.menuIcon} icon={faHome} />
 					</Link>
-					<Link className={styles.link} to="/search">
+					<Link
+						activeStyle={{ backgroundColor: 'rgba(0, 0, 0, 0.25)' }}
+						className={styles.link}
+						to="/search"
+					>
 						<FontAwesomeIcon className={styles.menuIcon} icon={faSearch} />
 					</Link>
-					<Link className={styles.link} to="/tags">
+					<Link
+						activeStyle={{ backgroundColor: 'rgba(0, 0, 0, 0.25)' }}
+						className={styles.link}
+						to="/tags"
+					>
 						<FontAwesomeIcon className={styles.menuIcon} icon={faTags} />
 					</Link>
-					<Link className={styles.link} to="/about">
+					<Link
+						activeStyle={{ backgroundColor: 'rgba(0, 0, 0, 0.25)' }}
+						className={styles.link}
+						to="/about"
+					>
 						<FontAwesomeIcon className={styles.menuIcon} icon={faIdBadge} />
 					</Link>
 				</div>

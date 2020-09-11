@@ -101,7 +101,7 @@ const Footer = () => {
 				</a>
 			</div>
 			<div>Copyright &copy; 2020 SnekNOTSnake</div>
-			<div style={{ width: 320 }} className={styles.divider} />
+			<div style={{ maxWidth: 320 }} className={styles.divider} />
 			<div>
 				Powered by:{' '}
 				<a

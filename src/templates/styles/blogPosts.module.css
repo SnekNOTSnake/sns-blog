@@ -14,17 +14,13 @@
 	width: 100%;
 	margin-bottom: 32px;
 	border-radius: 4px;
-	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
 	background-color: #313845;
 	color: rgba(255, 255, 255, 0.87);
 	transition: bottom 0.2s linear;
 }
 .post:hover {
 	bottom: 4px;
-}
-/* Disable bottom background for the last 2 posts */
-.post:nth-last-of-type(-n + 2) {
-	margin-bottom: 0;
 }
 
 .imageContainer {
@@ -54,5 +50,9 @@
 @media only screen and (min-width: 768px) {
 	.post {
 		width: calc(50% - 16px);
+	}
+	/* Disable bottom background for the last 2 posts */
+	.post:nth-last-of-type(-n + 2) {
+		margin-bottom: 0;
 	}
 }

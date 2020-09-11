@@ -1,7 +1,7 @@
 const dotenv = require('dotenv')
 const path = require('path')
 
-dotenv.config({ path: path.resolve(__dirname, 'config.env') })
+dotenv.config({ path: path.resolve(__dirname, `.env.${process.env.NODE_ENV}`) })
 
 contentfulConfig = {
 	spaceId: process.env.CONTENTFUL_SPACE_ID,
@@ -50,13 +50,17 @@ module.exports = {
 		{
 			resolve: 'gatsby-plugin-manifest',
 			options: {
-				name: 'GatsbyNetlifyContentfulStarter',
-				short_name: 'GatsbyNetlifyContentful',
+				lang: 'en',
+				name: 'SNS Blog',
+				short_name: 'SNS Blog',
 				start_url: '/',
-				background_color: '#6b37bf',
-				theme_color: '#6b37bf',
+				background_color: '#141820',
+				theme_color: '#141820',
 				display: 'standalone',
 				icon: 'src/images/sns.png',
+				icon_options: {
+					purpose: 'maskable',
+				},
 			},
 		},
 		'gatsby-plugin-offline',

@@ -24,14 +24,19 @@ a {
 	color: orange;
 }
 
+p {
+	text-align: left;
+}
+
 input {
 	color: #fff;
 	background-color: #313845;
 	border: none;
 	padding: 8px 16px;
-	width: 320px;
+	width: 95%;
+	max-width: 320px;
 	border-radius: 4px;
-	margin-right: 8px;
+	margin: 0 8px 8px 0;
 	outline: none;
 }
 
@@ -43,6 +48,7 @@ button {
 	outline: none;
 	border-radius: 4px;
 	cursor: pointer;
+	margin: 0 8px 8px 0;
 }
 button:active {
 	background-color: hsl(207, 59%, 40%);
@@ -57,13 +63,21 @@ button:active {
 }
 
 .content {
-	width: calc(95% - 64px);
+	width: calc(100% - 40px);
 	margin: 64px auto;
 	max-width: 1200px;
 	display: flex;
 	flex-wrap: wrap;
+	text-align: center;
 }
 
 .main {
-	width: 100%z;
+	width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+	.content {
+		width: calc(95% - 80px);
+		text-align: left;
+	}
 }

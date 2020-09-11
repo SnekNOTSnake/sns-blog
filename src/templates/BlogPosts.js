@@ -1,9 +1,10 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
-import styles from './styles/index.module.css'
+import styles from './styles/blogPosts.module.css'
 import Layout from '../components/Layout'
 import Tag from '../components/Tag'
+import Pagination from '../components/Pagination'
 import SEO from '../components/SEO'
 
 const Home = ({ data }) => {
@@ -35,6 +36,12 @@ const Home = ({ data }) => {
 					</Link>
 				))}
 			</div>
+			<Pagination
+				count={Math.ceil(
+					data.paginationData.pageInfo.itemCount /
+						Number(process.env.POSTS_PER_PAGE),
+				)}
+			/>
 		</Layout>
 	)
 }
@@ -42,8 +49,8 @@ const Home = ({ data }) => {
 export default Home
 
 export const query = graphql`
-	query {
-		allContentfulBlogPost {
+	query($skip: Int!, $limit: Int!) {
+		allContentfulBlogPost(skip: $skip, limit: $limit) {
 			edges {
 				node {
 					title
@@ -59,6 +66,11 @@ export const query = graphql`
 						}
 					}
 				}
+			}
+		}
+		paginationData: allContentfulBlogPost {
+			pageInfo {
+				itemCount
 			}
 		}
 	}

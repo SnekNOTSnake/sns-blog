@@ -1,8 +1,8 @@
 {
-	"name": "gatsby-starter-netlify-contentful",
+	"name": "sns-blog",
 	"version": "1.0.0",
 	"main": "index.js",
-	"license": "MIT",
+	"license": "0BSD",
 	"scripts": {
 		"build": "gatsby build",
 		"develop": "gatsby develop",
