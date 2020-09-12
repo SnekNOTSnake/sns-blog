@@ -1,9 +1,26 @@
 .favTechnologies {
-	columns: 2;
+	columns: 1;
 	margin: 32px 0;
 	list-style-position: inside;
+	list-style-type: none;
+	display: inline-block;
+	text-align-last: left;
 }
 
 .favTechnologies li {
 	margin-bottom: 8px;
+}
+
+.favTechnologies li a {
+	display: inline-block;
+}
+
+.favTechnologies li img {
+	display: block;
+}
+
+@media only screen and (min-width: 450px) {
+	.favTechnologies {
+		columns: 2;
+	}
 }
