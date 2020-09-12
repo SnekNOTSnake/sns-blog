@@ -10,13 +10,13 @@ const BlogPost = ({ data }) => {
 	const post = data.contentfulBlogPost
 	return (
 		<Layout>
-			<SEO title={post.title} />
+			<SEO title={post.title} description={post.description.description} />
 			<div style={{ width: '100%', margin: `${rhythm(1)} 0` }}>
 				<Img alt={post.title} fluid={post.heroImage.fluid} />
 			</div>
 			<div className={styles.postBody}>
 				<h1>{post.title}</h1>
-				<p>{post.description.description}</p>
+				<blockquote>{post.description.description}</blockquote>
 				<div
 					dangerouslySetInnerHTML={{
 						__html: post.body.childMarkdownRemark.html,

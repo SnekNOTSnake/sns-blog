@@ -19,13 +19,15 @@ a {
 h1 {
 	margin-bottom: 36px;
 }
-
 a {
 	color: orange;
 }
-
 p {
 	text-align: left;
+}
+blockquote {
+	color: #fff;
+	border-color: #3b82bd;
 }
 
 input {

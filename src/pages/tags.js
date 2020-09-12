@@ -8,7 +8,7 @@ const Tags = ({ data }) => {
 	const tags = data.allContentfulBlogPost.group
 	return (
 		<Layout>
-			<SEO title="Home" />
+			<SEO title="Tags" />
 			<h1>All Tags</h1>
 			<div className="Tags">
 				{tags.map((tag) => (

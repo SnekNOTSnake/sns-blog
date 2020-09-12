@@ -1,0 +1,70 @@
+/* Global */
+code[class*='language-'],
+pre[class*='language-'] {
+	tab-size: 2;
+	font-family: 'fira mono', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono',
+		monospace;
+	font-size: 0.9em;
+	color: rgba(255, 255, 255, 0.7);
+}
+.gatsby-highlight {
+	margin: 32px 0;
+}
+
+/* Background */
+:not(pre) > code[class*='language-'],
+pre[class*='language-'] {
+	background: #21252b;
+}
+
+/* Line Numbers */
+.line-numbers .line-numbers-rows {
+	left: 20px !important;
+	top: 20px;
+	border-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Syntax Highlights */
+.token.attr-name,
+.token.class-name,
+code[class='language-css'],
+pre[class='language-css'] {
+	color: #d19a66;
+}
+.token.property,
+.token.selector,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #e06c75;
+}
+.token.string,
+.token.char,
+.token.builtin,
+.token.attr-value,
+.token.inserted {
+	color: #98c379;
+}
+.token.punctuation,
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable,
+.language-css .token.property {
+	color: rgba(255, 255, 255, 0.7);
+}
+.token.keyword {
+	color: #c678dd;
+}
+.token.atrule,
+.token.function {
+	color: #61afef;
+}
+
+/* Markdown Headers */
+.token.important {
+	font-weight: normal;
+}

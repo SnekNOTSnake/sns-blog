@@ -18,7 +18,12 @@ module.exports = {
 		author: 'SnekNOTSnake',
 	},
 	plugins: [
-		'gatsby-transformer-remark',
+		{
+			resolve: 'gatsby-transformer-remark',
+			options: {
+				plugins: ['gatsby-remark-prismjs'],
+			},
+		},
 		'gatsby-transformer-sharp',
 		'gatsby-plugin-sharp',
 		{
@@ -29,6 +34,24 @@ module.exports = {
 			resolve: 'gatsby-plugin-typography',
 			options: {
 				pathToConfigModule: 'src/utils/typography.js',
+			},
+		},
+		{
+			resolve: 'gatsby-remark-prismjs',
+			options: {
+				classPrefix: 'language-',
+				inlineCodeMarer: null, // or `>`
+				aliases: {
+					sh: 'bash',
+				},
+				showLineNumbers: true,
+				noInlineHighlight: false,
+				prompt: {
+					user: 'SNS',
+					host: 'SNS-Desktop',
+					// either set prompt.global to true in gatsby-config.js, or pass at least one of `{outputLines: <range>}`, `{promptUser: <user>}`, or `{promptHost: <host>}` to a snippet
+					global: true,
+				},
 			},
 		},
 		{
