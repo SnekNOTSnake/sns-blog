@@ -61,8 +61,12 @@ const onCreateNode = ({ node, getNode, actions }) => {
 	if (node.internal.type === 'ContentfulBlogPost') {
 		const body = getNode(node.body___NODE)
 		const description = getNode(node.description___NODE)
-		createNodeField({ node, name: 'body', value: body })
-		createNodeField({ node, name: 'description', value: description })
+		createNodeField({ node, name: 'body', value: body.body })
+		createNodeField({
+			node,
+			name: 'description',
+			value: description.description,
+		})
 	}
 }
 

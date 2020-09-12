@@ -40,8 +40,8 @@ module.exports = {
 					ContentfulBlogPost: {
 						title: (node) => node.title,
 						tags: (node) => node.tags,
-						body: (node) => node.fields.body.body,
-						description: (node) => node.fields.description.description,
+						body: (node) => node.fields.body,
+						description: (node) => node.fields.description,
 						slug: (node) => node.slug,
 					},
 				},

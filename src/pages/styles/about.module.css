@@ -1,0 +1,9 @@
+.favTechnologies {
+	columns: 2;
+	margin: 32px 0;
+	list-style-position: inside;
+}
+
+.favTechnologies li {
+	margin-bottom: 8px;
+}

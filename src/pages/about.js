@@ -1,31 +1,94 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import styles from './styles/about.module.css'
 import SEO from '../components/SEO'
+import bash from '../images/bash.svg'
+import express from '../images/express.svg'
+import gatsby from '../images/gatsby.svg'
+import graphql from '../images/graphql.svg'
+import javascript from '../images/javascript.svg'
+import linux from '../images/linux.svg'
+import mongodb from '../images/mongodb.svg'
+import nodejs from '../images/nodejs.svg'
+import reactjs from '../images/reactjs.svg'
+import vscode from '../images/vscode.svg'
 
 const About = () => {
 	return (
 		<Layout>
 			<SEO title="About" />
-			<h1>SnekNOTSnake</h1>
+			<h1>
+				<span role="img" aria-label="Mountain">
+					⛰️
+				</span>{' '}
+				SnekNOTSnake
+			</h1>
 			<p>
-				The standard Lorem Ipsum passage, used since the 1500s. "Lorem ipsum
-				dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-				incididunt ut labore et dolore magna aliqua."
+				I, Akhmad Najmuddin usually descend into the darkness of the Internet as
+				SnekNOTSnake, am a student of life and truth (<b>if there's any</b>).
+				The goal of my life is to find the meaning of life itself, but for now
+				I'm in the middle of learning how to build a good website. My other
+				hobbies including playing Chess, and watching a historian rants about
+				movie historical inaccuracies.
 			</p>
-			<h2>Where can I get some?</h2>
-			<p>
-				There are many variations of passages of Lorem Ipsum available, but the
-				majority have suffered alteration in some form, by injected humour, or
-				randomised words which don't look even slightly believable. If you are
-				going to use a passage of Lorem Ipsum, you need to be sure there isn't
-				anything embarrassing hidden in the middle of text. All the Lorem Ipsum
-				generators on the Internet tend to repeat predefined chunks as
-				necessary, making this the first true generator on the Internet. It uses
-				a dictionary of over 200 Latin words, combined with a handful of model
-				sentence structures, to generate Lorem Ipsum which looks reasonable. The
-				generated Lorem Ipsum is therefore always free from repetition, injected
-				humour, or non-characteristic words etc.
-			</p>
+			<h2>
+				<span role="img" aria-label="Magic">
+					✨️
+				</span>{' '}
+				Favorite Technologies
+			</h2>
+			<ul className={styles.favTechnologies}>
+				<li>
+					<a href="https://www.linux.org/">
+						<img alt="Linux" src={linux} />
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/microsoft/vscode">
+						<img alt="VSCode" src={vscode} />
+					</a>
+				</li>
+				<li>
+					<a href="https://www.mongodb.com/">
+						<img alt="MongoDB" src={mongodb} />
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/expressjs/express">
+						<img alt="Express" src={express} />
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/facebook/react">
+						<img alt="Reactjs" src={reactjs} />
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/nodejs/node">
+						<img alt="Nodejs" src={nodejs} />
+					</a>
+				</li>
+				<li>
+					<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+						<img alt="JavaScript" src={javascript} />
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/graphql/graphql-js">
+						<img alt="GraphQL" src={graphql} />
+					</a>
+				</li>
+				<li>
+					<a href="https://www.gnu.org/software/bash/">
+						<img alt="Bash" src={bash} />
+					</a>
+				</li>
+				<li>
+					<a href="https://www.gatsbyjs.com/">
+						<img alt="Gatsby" src={gatsby} />
+					</a>
+				</li>
+			</ul>
 		</Layout>
 	)
 }
