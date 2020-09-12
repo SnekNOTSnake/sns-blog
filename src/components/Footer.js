@@ -95,7 +95,7 @@ const Footer = () => {
 				<a
 					target="_blank"
 					rel="noreferrer"
-					href="https://github.com/SnekNOTSnake"
+					href="https://github.com/SnekNOTSnake/sns-blog"
 				>
 					GitHub
 				</a>
