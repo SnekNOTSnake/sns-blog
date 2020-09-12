@@ -1,11 +1,13 @@
 const dotenv = require('dotenv')
 const path = require('path')
 
-dotenv.config({ path: path.resolve(__dirname, `.env.${process.env.NODE_ENV}`) })
+dotenv.config({
+	path: path.resolve(__dirname, `.env.${process.env.NODE_ENV}`),
+})
 
 contentfulConfig = {
-	spaceId: process.env.CONTENTFUL_SPACE_ID,
-	accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+	spaceId: process.env.GATSBY_CONTENTFUL_SPACE_ID,
+	accessToken: process.env.GATSBY_CONTENTFUL_ACCESS_TOKEN,
 }
 
 module.exports = {

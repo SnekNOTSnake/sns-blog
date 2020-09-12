@@ -15,16 +15,16 @@ const Home = ({ data }) => {
 			<h1>My Posts</h1>
 			<div className={styles.posts}>
 				{posts.map(({ node }) => (
-					<Link
-						to={`/posts/${node.slug}`}
-						key={node.slug}
-						className={styles.post}
-					>
-						<div className={styles.imageContainer}>
-							<Img alt={node.title} fluid={node.heroImage.fluid} />
-						</div>
+					<div key={node.slug} className={styles.post}>
+						<Link to={`/posts/${node.slug}`}>
+							<div className={styles.imageContainer}>
+								<Img alt={node.title} fluid={node.heroImage.fluid} />
+							</div>
+						</Link>
 						<div className={styles.postBody}>
-							<h3 className={styles.title}>{node.title}</h3>
+							<Link to={`/posts/${node.slug}`}>
+								<h3 className={styles.title}>{node.title}</h3>
+							</Link>
 							<p className={styles.date}>{node.createdAt}</p>
 							<p style={{ marginBottom: 16 }}>{node.description.description}</p>
 							<div className={styles.tags}>
@@ -33,13 +33,13 @@ const Home = ({ data }) => {
 								))}
 							</div>
 						</div>
-					</Link>
+					</div>
 				))}
 			</div>
 			<Pagination
 				count={Math.ceil(
 					data.paginationData.pageInfo.itemCount /
-						Number(process.env.POSTS_PER_PAGE),
+						Number(process.env.GATSBY_POSTS_PER_PAGE),
 				)}
 			/>
 		</Layout>

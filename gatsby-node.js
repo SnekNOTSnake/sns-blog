@@ -27,7 +27,7 @@ const createPages = async ({ graphql, actions }) => {
 	})
 
 	// Create Index pagination
-	const postsPerPage = Number(process.env.POSTS_PER_PAGE)
+	const postsPerPage = Number(process.env.GATSBY_POSTS_PER_PAGE)
 	const numPages = Math.ceil(posts.length / postsPerPage)
 	// Create the actual Index Page
 	createPage({
