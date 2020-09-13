@@ -55,6 +55,13 @@ module.exports = {
 			},
 		},
 		{
+			resolve: 'gatsby-plugin-nprogress',
+			options: {
+				color: '#3b82bd',
+				showSpinner: true,
+			},
+		},
+		{
 			resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
 			options: {
 				// Fields to index
@@ -70,6 +77,12 @@ module.exports = {
 						slug: (node) => node.slug,
 					},
 				},
+			},
+		},
+		{
+			resolve: 'gatsby-plugin-google-analytics',
+			options: {
+				trackingId: process.env.GATSBY_GOOGLE_ANALYTICS_TRACKING_ID,
 			},
 		},
 		{
